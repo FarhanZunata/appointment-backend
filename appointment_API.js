@@ -6,10 +6,10 @@ const PORT = 3000;
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'tramway.proxy.rlwy.net',
     user: 'root',
-    password: '',
-    database: 'appointment'
+    password: 'BKpLYQqmgYRGtaVZDrUUSkLVrFYgFIPu',
+    database: 'railway'
 });
 
 db.connect((error) => {
