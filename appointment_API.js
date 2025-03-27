@@ -2,14 +2,14 @@ const express = require('express');
 const mysql = require('mysql');
 
 const app = express();
-const PORT = 39068;
+const PORT = 3000;
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host: 'tramway.proxy.rlwy.net',
+    host: 'localhost',
     user: 'root',
-    password: 'BKpLYQqmgYRGtaVZDrUUSkLVrFYgFIPu',
-    database: 'railway'
+    password: '',
+    database: 'appointment'
 });
 
 db.connect((error) => {
